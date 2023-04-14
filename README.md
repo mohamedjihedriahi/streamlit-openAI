@@ -29,6 +29,26 @@ When you run the app for the first time, you will be prompted to enter your Open
 
 Once you have entered your API key, you can start asking questions by typing them into the text box and pressing the "Obtenir une réponse d'OpenAI" button. The app will use the OpenAI API to generate a response, which will be displayed on the screen.
 
+### On Docker
+To run the app, use the following command:
+```bash
+docker-compose up -d
+```
+
+
+## Folder Structure
+
+```
+├── app/
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
+└── docker-compose.yml
+
+```
+
+The app directory contains the Streamlit app and the Dockerfile used to build the Docker image. The docker-compose.yml file defines the Docker Compose service used to run the app.
+
 
 - **app.py**: This is the main Python script that runs the Streamlit app.
 - **requirements.txt**: This file contains the list of dependencies required to run the app.
